@@ -6,6 +6,7 @@ use App\Http\Controllers\SpecialityController;
 use App\Http\Controllers\Sub_SpecialityController;
 use App\Http\Controllers\CampaignController;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,12 +41,26 @@ Route::get('/campaign-new/tlshs-food-production/thankyou.html', [CampaignControl
 Route::get('/campaign-new/tlshs-hotel-management/thankyou.html', [CampaignController::class, 'hotelManagementThankyou']);
 Route::get('/campaign-new/tlshs-image-life-skills-lab/thankyou.html', [CampaignController::class, 'imageLifeSkillsLabThankyou']);
 
+// Blog
+Route::get('/blogs', [blogController::class, 'index']);
+Route::get('/blog/{slug}', [blogController::class, 'blogDetails']);
+
 Auth::routes();
 
 //admin area start
 Route::group(['prefix' => 'admin', 'middleware' => 'role:admin'], function () {
   Route::get('dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
   Route::get('/dashboard/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout']);
+
+  //Blogs
+  Route::get('blogs/add', [BlogController::class, 'add']);
+  Route::get('blogs/list', [BlogController::class, 'list']);
+  Route::get('blogs/edit/{id}', [BlogController::class, 'edit']);
+  Route::get('blogs/delete/{id}', [BlogController::class, 'delete']);
+  Route::post('blogs/store', [BlogController::class, 'store']);
+  Route::post('blogs/update', [BlogController::class, 'update']);
+  Route::post('blogs/priority/update', [BlogController::class, 'updatePriority']);
+  Route::get('blogs/list', [BlogController::class, 'getblogListAdmin']);
 });
 
 
