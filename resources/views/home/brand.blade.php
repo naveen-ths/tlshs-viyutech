@@ -1,0 +1,1 @@
+{!! $brand->long_description !!}

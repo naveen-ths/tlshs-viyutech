@@ -1,0 +1,36 @@
+.ding {
+  width:100%;
+  flex-flow: 
+}
+.ding h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.888em;
+  color: #888;
+} 
+
+.ss-main .ss-single-selected {
+    width: 50%;
+    height:60px;
+    padding: 10px;
+}
+.ss-main .ss-content {
+  width: 50%;
+}
+.ss-main .ss-multi-selected {
+    width: 80%;
+    padding: 10px;
+}
+
+  @media (max-width:950px) {
+  .content {
+    margin: 15px 10px auto;
+    padding: 0 10px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-align: center;
+    flex-direction: column;
+  }
+}

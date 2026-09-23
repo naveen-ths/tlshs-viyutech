@@ -1,0 +1,2 @@
+
+{!!  $hospitality->long_description !!}

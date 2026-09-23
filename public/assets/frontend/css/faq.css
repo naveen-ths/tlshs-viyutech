@@ -1,0 +1,86 @@
+
+.question {color:#696979;position: relative;padding:2rem 0px;cursor:pointer;border-bottom:1px solid #dcdde1;}
+.question h5{margin:0px;color:#000000;padding-right:37px;font-size:20px;line-height: 1.25em;letter-spacing: 0.01em;}
+.active h5{color:#C7A15B;}
+.active .arrow {background-image: url(plus-icon.png);}
+
+.question ul{margin:10px 0; padding:0px;}
+.question ul li {
+    position: relative;
+    color:#6F6F6F;
+    padding-left: 20px;
+    margin-bottom: 10px;
+	font-size: 18px;
+    line-height:2rem;
+	margin-left:17px;
+	list-style:none;
+	text-align:left;
+}
+.question ul li::before {
+    content: '';
+    background:#ef0049;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    position: absolute;
+    top:12px;
+    left: 0px;
+
+}
+.answer {
+display: none;padding:2rem 0px 1rem;
+font-size: 18px;
+line-height: 2rem;
+letter-spacing: 0px;color:#6F6F6F;
+}
+ 
+
+.answer p {
+    margin: 0;
+    text-align: justify;
+	color:#6F6F6F;font-size:16px;
+}
+.arrow {
+    background-image: url(plus1-icon.png);
+    width:22px;
+    height:22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:33px;
+    right: 10px;
+}
+.arrow-active{background-image: url(plus-icon.png);}
+
+.day-right .question h5{font-size:22px;}
+.day-right .question span{font-size:18px; color:#EBA552;}
+.day-right .answer img{border-radius:16px; margin-top:25px;}
+
+
+
+
+
+
+
+.day-right .arrow {
+    background-image: url(../images/2023/02/vector-127.png) !important;
+    width:15px;
+    height:15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:70px;
+    right: 10px;
+}
+.day-right .arrow-active{
+	background-image: url(../images/2023/02/vector-128.png) !important;
+}
+
+@media screen and (max-width:880px) {
+.question h5{font-size: 1.25rem;font-style: normal;font-weight: 400;letter-spacing: 0px;line-height: 1.25em; padding-right: 40px;}
+.answer{font-size: 1rem;font-style: normal;font-weight: 400;letter-spacing: 0.01em;line-height: 1.5;margin: 0px 0px 1rem;}.arrow{width: 25px;height: 25px; right:5px;}
+
+.day-right .question h5{font-size: 18px;}
+
+
+}

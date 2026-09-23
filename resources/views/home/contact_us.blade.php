@@ -1,0 +1,1 @@
+{!!  $contact_home['long_description'] !!}

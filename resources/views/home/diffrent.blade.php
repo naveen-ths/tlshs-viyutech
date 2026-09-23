@@ -1,0 +1,1 @@
+{!!  $diffrent['long_description'] !!}

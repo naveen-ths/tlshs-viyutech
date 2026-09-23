@@ -1,0 +1,3 @@
+ 
+
+{!!  $notice['long_description'] !!}

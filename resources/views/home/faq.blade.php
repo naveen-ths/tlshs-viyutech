@@ -1,0 +1,1 @@
+{!!  $faq['long_description'] !!}
